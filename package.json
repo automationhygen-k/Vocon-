@@ -1,0 +1,18 @@
+{
+  "name": "vocon",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix frontend && npm install --prefix backend && npm install",
+    "build:frontend": "npm run build --prefix frontend",
+    "start:backend": "npm run start --prefix backend",
+    "cap:sync": "npx cap sync android",
+    "android:build": "cd android && gradle assembleDebug",
+    "apk:build": "node scripts/build-apk.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  }
+}
