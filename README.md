@@ -66,6 +66,15 @@ VITE_API_URL=http://localhost:4000 npm run dev
 
 ## Build Android APK (WebView Wrapper)
 
+### One-command build (recommended)
+```bash
+npm install
+npm install --prefix frontend
+npm install --prefix backend
+npm run apk:build
+```
+
+### Manual build
 1. Build web app:
 ```bash
 cd frontend

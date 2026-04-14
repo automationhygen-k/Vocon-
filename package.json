@@ -7,7 +7,8 @@
     "build:frontend": "npm run build --prefix frontend",
     "start:backend": "npm run start --prefix backend",
     "cap:sync": "npx cap sync android",
-    "android:build": "cd android && ./gradlew assembleDebug"
+    "android:build": "cd android && gradle assembleDebug",
+    "apk:build": "node scripts/build-apk.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.0",
